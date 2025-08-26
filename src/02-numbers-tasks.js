@@ -141,8 +141,8 @@ function getLastDigit(value) {
  *     '37'     => 37
  * '-525.5'     => -525.5
  */
-function parseNumberFromString(/* value */) {
-  throw new Error('Not implemented');
+function parseNumberFromString(value) {
+  return Number(value);
 }
 
 /**
@@ -221,6 +221,10 @@ function isPrime(/* n */) {
  */
 function toNumber(/* value, def */) {
   throw new Error('Not implemented');
+  // if (typeof value === 'number' && Number(value) > def) {
+  //   return Number(value);
+  // }
+  // return def;
 }
 
 module.exports = {
