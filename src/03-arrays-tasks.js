@@ -278,8 +278,8 @@ function propagateItemsByPositionIndex(/* arr */) {
  *   [ 1,2,3,4,5,6,7,8,9,10 ] => [ 10, 9, 8 ]
  *   [ 10, 10, 10, 10 ] => [ 10, 10, 10 ]
  */
-function get3TopItems(/* arr */) {
-  throw new Error('Not implemented');
+function get3TopItems(arr) {
+  return arr.sort((a, b) => b - a).slice(0, 3);
 }
 
 /**
@@ -297,6 +297,14 @@ function get3TopItems(/* arr */) {
  */
 function getPositivesCount(/* arr */) {
   throw new Error('Not implemented');
+  // const newArr = [];
+  // for (let i = 0; i < arr.length; i += 1) {
+  //   if (typeof arr[i] === 'number') {
+  //     newArr.push(arr[i]);
+  //   }
+  // }
+  // const result = newArr.sort((a, b) => a - b);
+  // return result.at(-1);
 }
 
 /**
@@ -377,8 +385,8 @@ function findAllOccurrences(/* arr, item */) {
  *    [1, 2, 3, 4, 5]                   => '1,2,3,4,5'
  *    ['rock', 'paper', 'scissors']     => 'rock,paper,scissors'
  */
-function toStringList(/* arr */) {
-  throw new Error('Not implemented');
+function toStringList(arr) {
+  return arr.join(',');
 }
 
 /**
@@ -461,8 +469,9 @@ function getIntervalArray(/* start, end */) {
  *   [ 'a', 'a', 'a', 'a' ]  => [ 'a' ]
  *   [ 1, 1, 2, 2, 3, 3, 4, 4] => [ 1, 2, 3, 4]
  */
-function distinct(/* arr */) {
-  throw new Error('Not implemented');
+function distinct(arr) {
+  const result = new Set(arr);
+  return Array.from(result);
 }
 
 /**
