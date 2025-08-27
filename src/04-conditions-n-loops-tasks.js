@@ -439,6 +439,73 @@ function getMatrixProduct(/* m1, m2 */) {
  */
 function evaluateTicTacToePosition(/* position */) {
   throw new Error('Not implemented');
+  // if (position[0].every((el) => el === '0')) return '0';
+  // if (position[1].every((el) => el === '0')) return '0';
+  // if (position[2].every((el) => el === '0')) return '0';
+  // if (
+  //   position[0][0] === '0' &&
+  //   position[1][0] === '0' &&
+  //   position[2][0] === '0'
+  // )
+  //   return '0';
+  // if (
+  //   position[0][1] === '0' &&
+  //   position[1][1] === '0' &&
+  //   position[2][1] === '0'
+  // )
+  //   return '0';
+  // if (
+  //   position[0][2] === '0' &&
+  //   position[1][2] === '0' &&
+  //   position[2][2] === '0'
+  // )
+  //   return '0';
+  // if (
+  //   position[0][0] === '0' &&
+  //   position[1][1] === '0' &&
+  //   position[2][2] === '0'
+  // )
+  //   return '0';
+  // if (
+  //   position[0][2] === '0' &&
+  //   position[1][1] === '0' &&
+  //   position[2][0] === '0'
+  // )
+  //   return '0';
+  // if (position[0].every((el) => el === 'X')) return 'X';
+  // if (position[1].every((el) => el === 'X')) return 'X';
+  // if (position[2].every((el) => el === 'X')) return 'X';
+  // if (
+  //   position[0][0] === 'X' &&
+  //   position[1][0] === 'X' &&
+  //   position[2][0] === 'X'
+  // )
+  //   return 'X';
+  // if (
+  //   position[0][1] === 'X' &&
+  //   position[1][1] === 'X' &&
+  //   position[2][1] === 'X'
+  // )
+  //   return 'X';
+  // if (
+  //   position[0][2] === 'X' &&
+  //   position[1][2] === 'X' &&
+  //   position[2][2] === 'X'
+  // )
+  //   return 'X';
+  // if (
+  //   position[0][0] === 'X' &&
+  //   position[1][1] === 'X' &&
+  //   position[2][2] === 'X'
+  // )
+  //   return 'X';
+  // if (
+  //   position[0][2] === 'X' &&
+  //   position[1][1] === 'X' &&
+  //   position[2][0] === 'X'
+  // )
+  //   return 'X';
+  // return undefined;
 }
 
 module.exports = {
