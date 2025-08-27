@@ -238,6 +238,11 @@ function getRectangleString(/* width, height */) {
  */
 function encodeToRot13(/* str */) {
   throw new Error('Not implemented');
+  // let result = '';
+  // for (let i = 0; i < str.length; i += 1) {
+  //   result += String.fromCharCode(str.charCodeAt(i) + 13);
+  // }
+  // return result;
 }
 
 /**
@@ -255,6 +260,14 @@ function encodeToRot13(/* str */) {
  */
 function isString(/* value */) {
   throw new Error('Not implemented');
+  // let count = 0;
+  // for (let i = 0; i < value.length; i += 1) {
+  //   if (value[i] === `'`) {
+  //     count += 1;
+  //   }
+  // }
+  // return count === 2;
+  // return typeof value === 'string';
 }
 
 /**
