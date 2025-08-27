@@ -26,8 +26,17 @@
  *  21 => 'Fizz'
  *
  */
-function getFizzBuzz(/* num */) {
-  throw new Error('Not implemented');
+function getFizzBuzz(num) {
+  if (num % 3 === 0 && num % 5 === 0) {
+    return 'FizzBuzz';
+  }
+  if (num % 3 === 0) {
+    return 'Fizz';
+  }
+  if (num % 5 === 0) {
+    return 'Buzz';
+  }
+  return num;
 }
 
 /**
@@ -84,8 +93,11 @@ function getSumBetweenNumbers(n1, n2) {
  *   10,1,1   =>  false
  *   10,10,10 =>  true
  */
-function isTriangle(/* a, b, c */) {
-  throw new Error('Not implemented');
+function isTriangle(a, b, c) {
+  if (a + b > c && b + c > a && c + a > b) {
+    return true;
+  }
+  return false;
 }
 
 /**
@@ -191,8 +203,25 @@ function findFirstSingleChar(/* str */) {
  *   5, 3, true, true   => '[3, 5]'
  *
  */
-function getIntervalString(/* a, b, isStartIncluded, isEndIncluded */) {
-  throw new Error('Not implemented');
+function getIntervalString(a, b, isStartIncluded, isEndIncluded) {
+  // throw new Error('Not implemented');
+  let startSymbol = '';
+  let endSymbol = '';
+  if (isStartIncluded === true) {
+    startSymbol = '[';
+  }
+  if (isStartIncluded === false) {
+    startSymbol = '(';
+  }
+  if (isEndIncluded === true) {
+    endSymbol = ']';
+  }
+  if (isEndIncluded === false) {
+    endSymbol = ')';
+  }
+  return a < b
+    ? `${startSymbol}${a}, ${b}${endSymbol}`
+    : `${startSymbol}${b}, ${a}${endSymbol}`;
 }
 
 /**
@@ -336,8 +365,8 @@ function isBracketsBalanced(/* str */) {
  *    365, 4  => '11231'
  *    365, 10 => '365'
  */
-function toNaryString(/* num, n */) {
-  throw new Error('Not implemented');
+function toNaryString(num, n) {
+  return num.toString(n);
 }
 
 /**
